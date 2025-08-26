@@ -3,13 +3,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    /* font-family: "Segoe UI", sans-serif; */
     font-family: Arial, sans-serif;
     line-height: 1.5;
 }
 
 /* ----------------- Header ----------------- */
 header {
-    background-color: black;
+    /* background: linear-gradient(90deg, #4facfe, #00f2fe); */
+    background: linear-gradient(90deg, #5a9fdc, #8d9b9e);
     color: #ffff96;
     padding: 15px 8%;
     display: flex;
@@ -24,12 +26,19 @@ header {
 }
 
 .logo img {
-    height: 150px;
+    height: 40px;
     margin-right: 10px;
 }
 
 .logo h1 {
-    font-size: 30px;
+    font-size: 22px;
+}
+
+.tagline {
+    margin-left: 10px;
+    margin-top: 8px;
+    font-size: 12px;
+    color: #494747;
 }
 
 nav a {
@@ -44,80 +53,25 @@ nav a:hover {
     color: #ffe588;
 }
 
-/* ----------------- Hero (Buy & Sell) ----------------- */
+/* ----------------- Hero ----------------- */
 .hero {
-    position: relative;
-    overflow: hidden;
-    background-color: black;
-    color: #f3f0f0;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+    color: #333;
     text-align: center;
     padding: 80px 10%;
     border-radius: 20px;
     margin: 20px 8%;
 }
 
-/* Starry/glow effect */
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    pointer-events: none;
-    z-index: 0;
-    box-shadow:
-        30px 50px #ffd700,
-        80px 120px #ffc107,
-        150px 40px #ffb300,
-        220px 90px #ffd700,
-        300px 70px #ffc107,
-        400px 150px #ffb300,
-        500px 30px #ffd700,
-        600px 110px #ffc107;
-    border-radius: 20px;
-    animation: twinkle 2.5s infinite alternate;
-}
-
-/* Twinkle animation for stars */
-@keyframes twinkle {
-    0% {
-        opacity: 0.3;
-        transform: scale(1);
-    }
-
-    50% {
-        opacity: 0.8;
-        transform: scale(1.3);
-    }
-
-    100% {
-        opacity: 0.3;
-        transform: scale(1);
-    }
-}
-
-/* Keep text above stars */
-.hero h2,
-.hero p,
-.btn.primary {
-    position: relative;
-    z-index: 1;
-}
-
-
 .hero h2 {
     font-size: 36px;
     margin-bottom: 15px;
-    color: #fff;
 }
 
 .hero p {
     margin: 15px auto;
     max-width: 700px;
     font-size: 16px;
-    color: #ddd;
 }
 
 .highlight {
@@ -126,7 +80,7 @@ nav a:hover {
 
 .btn {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 20px;
     padding: 12px 25px;
     border-radius: 50px;
     text-decoration: none;
@@ -144,36 +98,37 @@ nav a:hover {
     transform: scale(1.05);
 }
 
-/* ----------------- Products (Browse Essentials) ----------------- */
+/* ----------------- Products ----------------- */
 .products {
     padding: 60px 8%;
-    background: radial-gradient(circle at center, #fff275 0%, #ffd700 20%, #ffc107 60%, #ffa000 100%);
+    background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
     border-radius: 20px;
     margin: 20px 0;
-    text-align: left;
+    text-align: left;   /* default alignment is left */
 }
 
 .products h2 {
-    text-align: center;
+    text-align: center;        /* center only main heading */
     font-size: 33px;
     margin-bottom: 30px;
     color: #3b3a3a;
-    background-color: #ffffffcc;
+    background-color: #ffffffcc; 
     display: inline-block;
     padding: 10px 25px;
     border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 50%;                 /* push to center */
+    transform: translateX(-50%); /* align perfectly center */
 }
 
 .products h3 {
     font-size: 25px;
     margin: 25px 0 15px;
     color: #9b2355;
-    text-align: left;
+    text-align: left;          /* ensure left alignment */
 }
+
 
 .product-grid {
     display: grid;
@@ -215,7 +170,8 @@ nav a:hover {
 
 /* ----------------- Footer ----------------- */
 footer {
-    background-color: black;
+    /* background: linear-gradient(90deg, #4facfe, #00f2fe); */
+    background: linear-gradient(90deg, #5a9fdc, #8d9b9e);
     color: white;
     padding: 40px 8% 20px;
     border-radius: 20px 20px 0 0;
