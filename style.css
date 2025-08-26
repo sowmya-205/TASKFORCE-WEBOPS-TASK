@@ -1,0 +1,236 @@
+/* ----------------- Reset ----------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: "Segoe UI", sans-serif; */
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* ----------------- Header ----------------- */
+header {
+    /* background: linear-gradient(90deg, #4facfe, #00f2fe); */
+    background: linear-gradient(90deg, #5a9fdc, #8d9b9e);
+    color: #ffff96;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo h1 {
+    font-size: 22px;
+}
+
+.tagline {
+    margin-left: 10px;
+    margin-top: 8px;
+    font-size: 12px;
+    color: #494747;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffe588;
+}
+
+/* ----------------- Hero ----------------- */
+.hero {
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fbc2eb);
+    color: #333;
+    text-align: center;
+    padding: 80px 10%;
+    border-radius: 20px;
+    margin: 20px 8%;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    margin: 15px auto;
+    max-width: 700px;
+    font-size: 16px;
+}
+
+.highlight {
+    color: #ff6f61;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.btn.primary {
+    background: #ff6f61;
+    color: white;
+}
+
+.btn.primary:hover {
+    background: #ff3b2f;
+    transform: scale(1.05);
+}
+
+/* ----------------- Products ----------------- */
+.products {
+    padding: 60px 8%;
+    background: linear-gradient(120deg, #a1c4fd, #c2e9fb);
+    border-radius: 20px;
+    margin: 20px 0;
+    text-align: left;   /* default alignment is left */
+}
+
+.products h2 {
+    text-align: center;        /* center only main heading */
+    font-size: 33px;
+    margin-bottom: 30px;
+    color: #3b3a3a;
+    background-color: #ffffffcc; 
+    display: inline-block;
+    padding: 10px 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    position: relative;
+    left: 50%;                 /* push to center */
+    transform: translateX(-50%); /* align perfectly center */
+}
+
+.products h3 {
+    font-size: 25px;
+    margin: 25px 0 15px;
+    color: #9b2355;
+    text-align: left;          /* ensure left alignment */
+}
+
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    font-size: 18px;
+    background: linear-gradient(145deg, #ffffff, #f0f0f0);
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.card h4 {
+    margin-bottom: 6px;
+    color: #4b6cb7;
+}
+
+.card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* ----------------- Footer ----------------- */
+footer {
+    /* background: linear-gradient(90deg, #4facfe, #00f2fe); */
+    background: linear-gradient(90deg, #5a9fdc, #8d9b9e);
+    color: white;
+    padding: 40px 8% 20px;
+    border-radius: 20px 20px 0 0;
+    margin-top: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-container h3 {
+    margin-bottom: 10px;
+}
+
+.footer-container p,
+.footer-container a {
+    font-size: 14px;
+    color: #fff;
+}
+
+.footer-container ul {
+    list-style: none;
+}
+
+.contact {
+    filter: invert(100%);
+}
+
+.footer-container ul li {
+    margin-bottom: 6px;
+}
+
+.footer-container a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-container a:hover {
+    color: #ffe588;
+}
+
+.copyright {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #eee;
+}
+
+/* ----------------- Responsive ----------------- */
+@media(max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+}
